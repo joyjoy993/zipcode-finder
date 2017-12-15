@@ -1,0 +1,416 @@
+Started GET "/nearest_gas?lat=37.77801&lng=-122.4119" for 127.0.0.1 at 2017-12-15 14:53:11 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/nearest_gas"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 14:53:20 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant ZipcodeController::Zipcoder):
+  
+app/controllers/zipcode_controller.rb:3:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 14:53:34 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/Users/joy/Desktop/zipcode-finder/app/models/zipcode.rb:11: syntax error, unexpected ':', expecting =>
+                    "type" : "Point",
+                            ^
+/Users/joy/Desktop/zipcode-finder/app/models/zipcode.rb:11: syntax error, unexpected ',', expecting keyword_end
+/Users/joy/Desktop/zipcode-finder/app/models/zipcode.rb:12: syntax error, unexpected ':', expecting keyword_end
+                    "coordinates" : [ -74.0192515, 40.6402399 ] 
+                                   ^
+/Users/joy/Desktop/zipcode-finder/app/models/zipcode.rb:13: syntax error, unexpected '}', expecting keyword_end):
+  
+app/models/zipcode.rb:11: syntax error, unexpected ':', expecting =>
+app/models/zipcode.rb:11: syntax error, unexpected ',', expecting keyword_end
+app/models/zipcode.rb:12: syntax error, unexpected ':', expecting keyword_end
+app/models/zipcode.rb:13: syntax error, unexpected '}', expecting keyword_end
+app/controllers/zipcode_controller.rb:3:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 14:53:57 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NoMethodError (undefined method `geoIntersects' for :geometry:Symbol):
+  
+app/models/zipcode.rb:10:in `get_zipcode'
+app/controllers/zipcode_controller.rb:4:in `show'
+Started GET "/nearest_gas?lat=37.77801&lng=-122.4119" for 127.0.0.1 at 2017-12-15 15:18:06 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/nearest_gas"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:18:12 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/Users/joy/Desktop/zipcode-finder/app/models/zipcode.rb:18: syntax error, unexpected ')', expecting =>):
+  
+app/models/zipcode.rb:18: syntax error, unexpected ')', expecting =>
+app/controllers/zipcode_controller.rb:3:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:18:30 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/Users/joy/Desktop/zipcode-finder/app/models/zipcode.rb:18: syntax error, unexpected '}', expecting =>
+                  }})
+                    ^):
+  
+app/models/zipcode.rb:18: syntax error, unexpected '}', expecting =>
+app/controllers/zipcode_controller.rb:3:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:18:52 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 75ms
+
+
+  
+NoMethodError (undefined method `render_json' for #<ZipcodeController:0x007fa88d44d3a0>
+Did you mean?  render):
+  
+app/controllers/zipcode_controller.rb:5:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:24:50 -0500
+Processing by ZipcodeController#show as HTML
+Completed 200 OK in 16ms (Views: 0.4ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:26:42 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.005817s
+Completed 200 OK in 33ms (Views: 1.5ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:28:14 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.000501s
+Completed 200 OK in 2ms (Views: 0.1ms)
+
+
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | zipcode_finder_development.createIndexes | STARTED | {"createIndexes"=>"zipcodes", "indexes"=>[{:key=>{:geometry=>"2dsphere"}, :name=>"geometry_2dsphere"}]}
+MONGODB | localhost:27017 | zipcode_finder_development.createIndexes | SUCCEEDED | 0.117167s
+MONGOID: Created indexes on Zipcode:
+MONGOID: Index: {:geometry=>"2dsphere"}, Options: {}
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:41:58 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 29ms
+
+
+  
+NoMethodError (undefined method `intersects_point' for Zipcode:Class):
+  
+app/models/zipcode.rb:11:in `get_result'
+app/controllers/zipcode_controller.rb:4:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:43:54 -0500
+Processing by ZipcodeController#show as HTML
+Completed 204 No Content in 10ms
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:44:13 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$in"=>[-74.0192515, 40.6402399]}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.0028710000000000003s
+Completed 204 No Content in 16ms
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:46:14 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 22ms
+
+
+  
+NoMethodError (undefined method `default_session' for Mongoid:Module
+Did you mean?  default_client):
+  
+app/models/zipcode.rb:11:in `get_result'
+app/controllers/zipcode_controller.rb:4:in `show'
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:47:41 -0500
+Processing by ZipcodeController#show as HTML
+Completed 204 No Content in 16ms
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:47:55 -0500
+Processing by ZipcodeController#show as HTML
+Completed 204 No Content in 1ms
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:48:10 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.004025s
+Completed 204 No Content in 19ms
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:48:23 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.001214s
+Completed 204 No Content in 12ms
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:49:09 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.00074s
+Completed 200 OK in 13ms (Views: 0.4ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:50:25 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcode", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.0012269999999999998s
+Completed 200 OK in 18ms (Views: 0.2ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:50:35 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcode", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.002594s
+Completed 200 OK in 24ms (Views: 0.4ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:52:40 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcode", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.001779s
+Completed 200 OK in 36ms (Views: 1.1ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:53:20 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcode", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.009597s
+Completed 200 OK in 13ms (Views: 0.2ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:54:55 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 64ms (Views: 1.0ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:55:05 -0500
+Processing by ZipcodeController#show as HTML
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.01258s
+Completed 200 OK in 15ms (Views: 0.1ms)
+
+
+Started GET "/zipcode" for 127.0.0.1 at 2017-12-15 15:56:47 -0500
+Processing by ZipcodeController#show as HTML
+Completed 500 Internal Server Error in 9ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/models/zipcode.rb:10:in `get_result'
+app/controllers/zipcode_controller.rb:4:in `show'
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515" for 127.0.0.1 at 2017-12-15 15:58:09 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>["-74.0192515", "40.6402399"]}}}}}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | Point must only contain numeric elements (2) | 0.0021000000000000003s
+Completed 500 Internal Server Error in 12ms
+
+
+  
+Mongo::Error::OperationFailure (Point must only contain numeric elements (2)):
+  
+app/models/zipcode.rb:12:in `get_result'
+app/controllers/zipcode_controller.rb:7:in `show'
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515" for 127.0.0.1 at 2017-12-15 15:58:21 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>["-74.0192515", "40.6402399"]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | Point must only contain numeric elements (2) | 0.000625s
+Completed 500 Internal Server Error in 10ms
+
+
+  
+Mongo::Error::OperationFailure (Point must only contain numeric elements (2)):
+  
+app/models/zipcode.rb:12:in `get_result'
+app/controllers/zipcode_controller.rb:7:in `show'
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515" for 127.0.0.1 at 2017-12-15 15:58:40 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>["-74.0192515", "40.6402399"]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | Point must only contain numeric elements (2) | 0.00043999999999999996s
+Completed 500 Internal Server Error in 10ms
+
+
+  
+Mongo::Error::OperationFailure (Point must only contain numeric elements (2)):
+  
+app/models/zipcode.rb:12:in `get_result'
+app/controllers/zipcode_controller.rb:7:in `show'
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515" for 127.0.0.1 at 2017-12-15 15:58:51 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>["-74.0192515", "40.6402399"]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | Point must only contain numeric elements (2) | 0.0011660000000000002s
+Completed 500 Internal Server Error in 3ms
+
+
+  
+Mongo::Error::OperationFailure (Point must only contain numeric elements (2)):
+  
+app/models/zipcode.rb:12:in `get_result'
+app/controllers/zipcode_controller.rb:7:in `show'
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515" for 127.0.0.1 at 2017-12-15 15:59:09 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.001345s
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.001004s
+Completed 200 OK in 12ms (Views: 0.4ms)
+
+
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515" for 127.0.0.1 at 2017-12-15 15:59:55 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.002386s
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.0014390000000000002s
+Completed 200 OK in 17ms (Views: 0.4ms)
+
+
+Started GET "/zipcode?lat=40.6402399&lng=-74.0192515x" for 127.0.0.1 at 2017-12-15 15:59:59 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74.0192515x"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.000794s
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0192515, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.0009299999999999999s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started GET "/zipcode?lat=40.6402399&lng=-74" for 127.0.0.1 at 2017-12-15 16:00:05 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.00169s
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.001682s
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/zipcode?lat=40.6402399&lng=-7488" for 127.0.0.1 at 2017-12-15 16:00:09 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-7488"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-7488.0, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | longitude/latitude is out of bounds, lng: -7488 lat: 40.6402 (2) | 0.0016430000000000001s
+Completed 500 Internal Server Error in 4ms
+
+
+  
+Mongo::Error::OperationFailure (longitude/latitude is out of bounds, lng: -7488 lat: 40.6402 (2)):
+  
+app/models/zipcode.rb:12:in `get_result'
+app/controllers/zipcode_controller.rb:7:in `show'
+Started GET "/zipcode?lat=40.6402399&lng=-7488" for 127.0.0.1 at 2017-12-15 16:02:23 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-7488"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-7488.0, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | longitude/latitude is out of bounds, lng: -7488 lat: 40.6402 (2) | 0.000657s
+Completed 200 OK in 9ms (Views: 0.4ms)
+
+
+Started GET "/zipcode?lat=40.6402399&lng=-7488" for 127.0.0.1 at 2017-12-15 16:03:46 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-7488"}
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-7488.0, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | FAILED | longitude/latitude is out of bounds, lng: -7488 lat: 40.6402 (2) | 0.001529s
+Completed 200 OK in 42ms (Views: 0.6ms)
+
+
+Started GET "/zipcode?lat=40.6402399&lng=-74" for 127.0.0.1 at 2017-12-15 16:03:49 -0500
+Processing by ZipcodeController#show as HTML
+  Parameters: {"lat"=>"40.6402399", "lng"=>"-74"}
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0, 40.6402399]}}}}, "projection"=>{"_id"=>1}, "limit"=>1}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.001966s
+MONGODB | localhost:27017 | zipcode_finder_development.find | STARTED | {"find"=>"zipcodes", "filter"=>{"geometry"=>{"$geoIntersects"=>{"$geometry"=>{"type"=>"Point", "coordinates"=>[-74.0, 40.6402399]}}}}, "sort"=>{"_id"=>1}, "limit"=>1, "singleBatch"=>true}
+MONGODB | localhost:27017 | zipcode_finder_development.find | SUCCEEDED | 0.0015799999999999998s
+Completed 200 OK in 7ms (Views: 0.3ms)
+
+
