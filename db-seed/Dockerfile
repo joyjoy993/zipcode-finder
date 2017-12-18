@@ -1,4 +1,8 @@
 FROM mongo
 
-COPY ./init.json /
-CMD mongoimport --host mymongo --db zipcode_finder_development --collection zipcodes --type json --file /init.json --jsonArray
+RUN mkdir -p /seed
+WORKDIR /seed
+
+COPY ./init.json.gz /seed/init.json.gz
+COPY ./init.js /seed/init.js
+COPY ./init.sh /seed/init.sh
