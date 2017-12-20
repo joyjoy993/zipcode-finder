@@ -35,3 +35,14 @@ if there's no result or there's an error, it should return
 3. Stop by running ```docker-compose stop```.  
 
 #### Or you can use docker container to control them. ####
+
+## Other notes
+#### Data source
+US zipcode boundary shape files from [Census Bureau ](https://www.census.gov/geo/maps-data/data/cbf/cbf_zcta.html)
+
+#### Preprocess data
+Download the shape files and convert them to json files.
+
+#### Why I use docker in this project
+1. This project can be easily deployed in some computers that don't have rails and mongodb.
+2. The json data of zipcode boundary can be stored into the container and automatically imported into mongodb.
