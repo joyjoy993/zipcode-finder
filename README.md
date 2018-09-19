@@ -1,5 +1,8 @@
 # zipcode-finder
 
+## Author
+![](author.JPG)
+
 ## Goal
 Build an rails-API to query zipcode by given gps, and encapsulate the system into docker.
 
