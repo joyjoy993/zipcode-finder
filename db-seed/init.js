@@ -1,0 +1,1 @@
+db.zipcodes.createIndex( { geometry : "2dsphere" }, { background: true } );

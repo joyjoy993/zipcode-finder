@@ -13,6 +13,7 @@ services:
       - "db:mymongo"
     depends_on:
       - "db"
+    command: sh /seed/init.sh
 
   web:
     build: ./web
@@ -24,4 +25,4 @@ services:
       - "db:mymongo"
     depends_on:
       - "db-seed"
-    command: bash -c "cd /usr/src/app && bundle exec rake db:mongoid:create_indexes RAILS_ENV=development && rails s"
+    command: bash -c "cd /usr/src/app && rails s"
